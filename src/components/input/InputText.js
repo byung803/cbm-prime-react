@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { InputText } from "primereact/inputtext";
 
 export default class InputTextDemo extends Component {
@@ -52,9 +51,9 @@ export default class InputTextDemo extends Component {
             <InputText
               type="text"
               keyfilter={/[0-9]/}
-              validateOnly={true}
+              validateOnly={false}
               value={this.state.value3}
-              tooltip="tooltip"
+              tooltip="Keyfilter Tooltip"
               onChange={e => this.setState({ value3: e.target.value })}
             />
           </div>
