@@ -18,6 +18,19 @@ export default class Header extends Component {
           <span>
             <Link to="/splitbutton">SplitButton</Link>{" "}
           </span>
+          <span>
+            <Link to="/dropdown">Dropdown</Link>{" "}
+          </span>
+          <span>
+            <Link to="/tristate">TriStateCheckbox</Link>
+            {"  "}
+          </span>
+          <span>
+            <Link to="/togglebutton">ToggleButton</Link>{" "}
+          </span>
+          <span>
+            <Link to="/multiselect">MultiSelect</Link>{" "}
+          </span>
         </p>
         <h3>Inputs</h3>
         <p>
@@ -25,7 +38,10 @@ export default class Header extends Component {
             <Link to="/inputtext">InputText</Link>{" "}
           </span>
           <span>
-            <Link to="/togglebutton">ToggleButton</Link>{" "}
+            <Link to="/chips">Chips</Link>{" "}
+          </span>
+          <span>
+            <Link to="/inputmask">InputMask</Link>{" "}
           </span>
         </p>
       </div>
