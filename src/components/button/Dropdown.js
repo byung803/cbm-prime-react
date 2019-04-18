@@ -49,7 +49,7 @@ export default class DropdownDemo extends Component {
 
   render() {
     const cities = [
-      { name: "New York1111111111111111111111", code: "NY" },
+      { name: "New York123123123123123", code: "NY" },
       { name: "Rome", code: "RM" },
       { name: "London", code: "LDN" },
       { name: "Istanbul", code: "IST" },
@@ -86,7 +86,6 @@ export default class DropdownDemo extends Component {
             options={cities}
             onChange={this.onCityChange}
             autoWidth={true}
-            style={{ width: "300px" }}
             placeholder="Select a City"
             optionLabel="name"
             filter={true}

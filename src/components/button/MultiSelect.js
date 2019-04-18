@@ -86,6 +86,7 @@ export default class MultiSelectDemo extends Component {
             style={{ minWidth: "12em" }}
             filter={true}
             placeholder="Choose"
+            fixedPlaceholder={true}
           />
 
           <h3>Templating</h3>

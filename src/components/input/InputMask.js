@@ -55,6 +55,7 @@ export default class InputMaskDemo extends Component {
                 mask="99/99/9999"
                 value={this.state.val3}
                 placeholder="99/99/9999"
+                size={100}
                 slotChar="mm/dd/yyyy"
                 onChange={e => this.setState({ val3: e.value })}
               />
@@ -63,10 +64,17 @@ export default class InputMaskDemo extends Component {
             <div className="p-col-12 p-md-4">
               <h3>Phone {this.state.val4}</h3>
               <InputMask
+                name="hello"
                 mask="(999) 999-9999"
                 value={this.state.val4}
                 placeholder="(999) 999-9999"
                 onChange={e => this.setState({ val4: e.value })}
+                tooltip="hello!"
+                tooltipOptions={{
+                  position: "bottom",
+                  showDelay: 1000,
+                  event: "focus"
+                }}
               />
             </div>
 
@@ -84,8 +92,11 @@ export default class InputMaskDemo extends Component {
               <h3>Serial Number {this.state.val6}</h3>
               <InputMask
                 mask="a*-999-a999"
+                maxlength={1}
                 value={this.state.val6}
                 placeholder="a*-999-a999"
+                slotChar="/"
+                autoClear={false}
                 onChange={e => this.setState({ val6: e.value })}
               />
             </div>

@@ -16,9 +16,6 @@ export default class Header extends Component {
             <Link to="/button">Button</Link>{" "}
           </span>
           <span>
-            <Link to="/splitbutton">SplitButton</Link>{" "}
-          </span>
-          <span>
             <Link to="/dropdown">Dropdown</Link>{" "}
           </span>
           <span>
@@ -30,6 +27,9 @@ export default class Header extends Component {
           </span>
           <span>
             <Link to="/multiselect">MultiSelect</Link>{" "}
+          </span>
+          <span>
+            <Link to="/radiobutton">RadioButton</Link>{" "}
           </span>
         </p>
         <h3>Inputs</h3>
@@ -44,6 +44,10 @@ export default class Header extends Component {
             <Link to="/inputmask">InputMask</Link>{" "}
           </span>
         </p>
+        <h3>Milestone2</h3>
+          <span>
+            <Link to="/splitbutton">SplitButton</Link>{" "}
+          </span>
       </div>
     );
   }

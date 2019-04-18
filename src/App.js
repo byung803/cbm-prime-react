@@ -7,10 +7,11 @@ import InputMask from "./components/input/InputMask";
 import Chips from "./components/input/Chips";
 import ToggleButton from "./components/button/ToggleButton";
 import Button from "./components/button/Button";
-import SplitButton from "./components/button/SplitButton";
 import Dropdown from "./components/button/Dropdown";
 import TriStateCheckbox from "./components/button/TriStateCheckbox";
 import MultiSelect from "./components/button/MultiSelect";
+import RadioButton from "./components/button/RadioButton";
+import SplitButton from "./components/milestone2/SplitButton";
 
 import "primereact/resources/themes/nova-light/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -25,7 +26,6 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Home} />
           <Route exact path="/button" component={Button} />
-          <Route exact path="/splitbutton" component={SplitButton} />
           <Route exact path="/inputtext" component={InputText} />
           <Route exact path="/togglebutton" component={ToggleButton} />
           <Route exact path="/dropdown" component={Dropdown} />
@@ -33,6 +33,8 @@ class App extends Component {
           <Route exact path="/chips" component={Chips} />
           <Route exact path="/inputmask" component={InputMask} />
           <Route exact path="/multiselect" component={MultiSelect} />
+          <Route exact path="/radiobutton" component={RadioButton} />
+          <Route exact path="/splitbutton" component={SplitButton} />
         </div>
       </BrowserRouter>
     );
